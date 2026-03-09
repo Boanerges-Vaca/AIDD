@@ -1,0 +1,23 @@
+
+ref: 1-assets-board.builder.md
+
+Planifica la inicializacion de un proyecto disponible en Node 24 con TS nativo uas Express 5
+No uses nada mas por ahora.
+
+ejecucion 1 modo ASk (pregunta).
+
+refina para usar Node sin tsx ni tsconfig por que la version 24 ya opera nativa con TS
+no incluyas ningun endpoint por ahora solo scanfolding del proyecto
+ejecucion 2
+
+
+ok, has un commit con un mensaje siguiendo conventional commits.
+// mientras mas sepas del asunto mejor.git
+
+***
+
+context: '1-assets-board.builder.md'
+Implementa la primera funcionalidad "Crear porfolio"
+ejecucion..
+
+
