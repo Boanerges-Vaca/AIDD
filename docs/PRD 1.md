@@ -4,25 +4,25 @@
 
 ## Funcionalidades
 
-### 1 GESTIÓN DE PORTFOLIOS
+### 1 Gestión de Portfolios
 
 - Crear nuevos portfolios con email del usuario y cash inicial
 
-- [1_gestion_portfolios]()
-- defined
+- [1_gestion_portfolios#1](https://github.com/EscuelaIt/AIDD/issues/1)
+- definido
 
-### 2 OPERACIONES DE TRADING
+### 2 Operaciones de Trading
 
 - Comprar y vender activos donde el usuario especifica cantidad y precio
 
-- [2_operaciones_trading]()
+- [2_operaciones_trading#2](https://github.com/EscuelaIt/AIDD/issues/2)
 - draft
 
-### 3 CONSULTA DE PORTFOLIOS
+### 3 Consulta de Portfolios
 
 - Consultar el estado de un portfolio incluyendo cash restante y lista de activos
 
-- [3_consulta_portfolios]()
+- [3_consulta_portfolios#3](https://github.com/EscuelaIt/AIDD/issues/3)
 - draft
 
 ## Diagrama de contexto
@@ -35,7 +35,7 @@ C4Context
 
     System(assetsboard, "AssetsBoard API", "API REST para gestión de portfolios de activos financieros")
 
-    SystemDb(filesystem, "Sistema de archivos", "Almacena portfolios y transacciones")
+    SystemDb(filesystem, "Sistema de ficheros", "Almacena portfolios  y transacciones")
 
     Rel(developer, assetsboard, "Realiza llamadas HTTP", "REST API")
     Rel(assetsboard, filesystem, "Lee/Escribe datos", "JSON")
@@ -50,7 +50,7 @@ C4Context
 - **Autenticación**: ninguna
 - **Integraciones**: ninguna
 - **Monitorización**: ninguno
-- **Persistencia**: sistema de archivos
+- **Persistencia**: base de datos
 
 ### C_1: API REST
 
