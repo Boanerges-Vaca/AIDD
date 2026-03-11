@@ -1,0 +1,86 @@
+Cada agents tiene su sistema de reglas.
+
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+.Cursorrules,(.cursor/rules/**.mdc)
+.windsurfrules
+.clinerules
+vsCode - github/copilot-instructions.md
+bolt - bolt/prompt
+.rules
+kilo - .kilocode/rules/**.md
+
+
+*** mi manera***
+.ia/buider/rules/ **.md
+colocamos las reglas por separado.
+ventajas:
+- las puedes usa con cualquier editor y cualquier LLM, referenciandolas (@, #...) en el prompt.
+
+
+buider
+1. arquetipo... ya esta en anterior clase.
+2. funcionalidades ... esta clase.
+
+Las funcionalidades la emos escrito en forma de github issues.
+
+
+**** chat***
+-lee la primera  funcionalidad de github @prd.md.
+descarga el contenido de la issue en github.
+ejecucion..
+
+//si la issue esta mal escrita es mi responsabilidad.
+
+//ahora ejecucion de las funcionalidades.
+
+- implementa esta funcionalidad
+ejecucion...
+
+aveces entran en bucle...
+
+importante
+1. primero planificar luego construir.
+2. cuando funcionalidad es grande, dividir en subtareas.
+
+*** chat ***
+genera el commit para esta funcionalidad y referenciale el nro de issue de github
+// cada chat es una ventana de contexto.
+// es adecuado tener un chat para algo especifico, pero saviendo que siempre se pudre
+// si en el mismo chat te cambias de modelo, la mayoria de las veces se pierde.
+
+*** chat / copilot***.
+
+busca en las issues de github las que estan abiertas
+ejecucion...
+
+ver detalles de la 2.
+....
+
+crear en .ai/builder/b-1.plan.instructions.md (prompt que despues puedes reutilizar)
+b-1.plan.template.md
+b-2.implement.instructions.md.
+
+
+**** cuando la funcionalidad es larga|complicada ****
+- dividemos los problemas en dos:
+    1. decimos esto hay que hacer (planificacion)
+        - con esta tecnologia
+        - los pasos a seguir - un plan.
+    2. el plan (el fichero de 1.) lo pasamos a otro modelo para que lo ejecute|implemente (implementacion ).
+
+*** chat***
+sigue las insturcciones (ref. a b-1.plan.instructions.md) para generar el plan de implementacion de esta funcionalidad.
+ejecucion....
+
+
+*** nuevo chat - otro modelo|agente (opcional) ***
+impl el plan .docs/2_operaciones_trading.plan.md.
+ejecucion...
+
+mejora... 
+implementa el plan.
+marca la tarea como completada.
+agregar los cambios a git con un convetional commit.
+
