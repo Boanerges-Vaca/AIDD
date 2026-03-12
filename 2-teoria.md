@@ -15,53 +15,58 @@ Documentos:
   eg. solo API, API + Web... si es con multiples proyectos
 - N... los n son uno por cada funcionalidad Core.
 
-****
+---
 para generar estos documentos no tienes que escribirlos a mano.
 por tanto vamos a crear plantillas con sintaxis que te permitan crear PRD´s y cualquier otra cosa.
 
 podriamos crear un documento que explique la plantilla.
-'syntax.template.md'
+`syntax.template.md`
 
-Las plantillas PRD, Domain, features., sistema van a estar asociadas al Agent Architect.
+Las plantillas PRD, Domain, features., sistema[Opcional] van a estar asociadas al `Agent Architect`
 
-En el builder vamos a tener muchas plantillas
+En el **builder** vamos a tener muchas plantillas
  - planificacion, contenedor, db
 
-En el Craftsman
+En el **Craftsman**
 - especificar las pruebas.
 - planificar la documentacion.
 
-.... Capetas para guardar los mds...
-cada editor tiene su forma.
+#### Capetas para guardar los mds
+>cada editor tiene su forma.
 
-nosotros usaremos:
-- apartado del nombre del editor y mas generico.
+Nosotros usaremos:
+- independiente del editor y mas generico.
 - carpeta .ai (al empezar con punto quiere decir que no es codigo)
 - valido para cualquier proyecto en cualquier tecnologia
  
+Dentro de:
+- .ai-> architect.
+- *.template.md -> 
 
-instructions = promts
-
-dentro de .ai-> architect.
-*.template.md -> 
-
-los Containers de la plantilla no son Containers de dockers o kubernetes,
+Los Containers de la plantilla no son Containers de dockers o kubernetes,
 es nomenclatura estandar de arquietectura de software donde los elementos despleglabes se les llama containers.
 si no te gusta la cambias.
 que es un contenedor?. es un despleglabe. (CLI, API, Angular, etc  )
 
+---
 
----- chat ---
+### chat
 
+```
+**Chat**
 usa esta plantilla para generar un fichero en esta carpeta.
-Pero cuando el Prompt es muy largo, combiene tenerlo en un archivo aparte
+```
+>Pero cuando el Prompt es muy largo, combiene tenerlo en un archivo aparte
 estos son los **.instructions.md (podrian ser **.prompts.md).
+>`instructions = promts`
 
 // a-1 -> viene de arquitect. (a-1, a-2... a-n)
 
-- sigue las instrucciones de #a-1.prd.instru.md para mi proyecto AssestsBoard
+```
+**chat**
+- sigue las instrucciones de @a-1.prd.instru.md para mi proyecto AssestsBoard
 ejecucion 1
-
+```
 
 ---
 falta un documento de sistemas. podriamos hacerlo en architect o en builder.
