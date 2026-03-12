@@ -1,0 +1,69 @@
+# API Structure Guide
+
+## Architecture Overview
+The API follows a **layered architecture** pattern with clear separation of concerns:
+
+- **Controllers**: Handle HTTP requests/responses and input validation
+- **Logic**: Contains business logic and orchestrates operations
+- **Repositories**: Handle data access and external integrations
+- **Middleware**: Cross-cutting concerns like logging, auth, etc.
+- **Shared**: Common utilities and types
+
+## File Organization
+
+### Main API Files
+- [api.bootstrap.ts](mdc:src/api/api.bootstrap.ts) - Server initialization and configuration
+- [api.routes.ts](mdc:src/api/api.routes.ts) - Route registration and middleware setup
+
+### Route Structure
+Each route has its own folder in `src/api/routes/{route-name}/` containing:
+- `{route-name}.controller.ts` - Request/response handling
+- `{route-name}.logic.ts` - Business logic
+- `{route-name}.repository.ts` - Data access
+
+**Current route folders:**
+- [health/](mdc:src/api/routes/health/) - Health check endpoints
+- [user/](mdc:src/api/routes/user/) - User management endpoints
+
+### Middleware
+- [log.middleware.ts](mdc:src/api/middleware/log.middleware.ts) - Request logging
+
+### Shared Utilities
+- [request.utils.ts](mdc:src/api/shared/request.utils.ts) - Common request helpers
+
+## Creating New Routes
+
+### 1. Create Route Folder and Files
+Create a new folder `src/api/routes/{route-name}/` and add three files:
+- `{route-name}.controller.ts` - HTTP handling
+- `{route-name}.logic.ts` - Business logic  
+- `{route-name}.repository.ts` - Data access
+
+**Example structure for a new `portfolio` route:**
+```
+src/api/routes/portfolio/
+├── portfolio.controller.ts
+├── portfolio.logic.ts
+└── portfolio.repository.ts
+```
+
+### 2. Follow Naming Conventions
+- Use kebab-case for file names
+- Use camelCase for function names
+- Export functions with descriptive names
+
+### 3. Register Routes
+Add your controller to [api.routes.ts](mdc:src/api/api.routes.ts) following the pattern:
+```typescript
+app.use("/{route-path}", {routeName}Controller);
+```
+
+## Architecture Principles
+- **Single Responsibility**: Each layer has one clear purpose
+- **Dependency Direction**: Controllers → Logic → Repository
+- **Separation of Concerns**: HTTP, business logic, and data access are separate
+- **Reusability**: Shared utilities for common operations
+description:
+globs:
+alwaysApply: false
+---
