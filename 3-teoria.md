@@ -1,22 +1,27 @@
 
-Builder: 
+## Builder:
 Presuponer que hay un minimo de proyecto inicializado.
 (npm init -y), 
 
 Reglas...
 
 - como si particemos de un proyecto nuevo -> Agregales reglas.
-   pero tienes que saber, si no sabes preguntas a cualquier modelo IA:
+   pero tienes que saber, si no sabes preguntas a cualquier modelo IA.
+
    Promt: Cual arquitectura de softwares es mas adecuada para un proyecto de este tamaño.
+
    promt 2: Cual es la estructura de carpeta mas adecuada para montarlo en ... (xpresst, python, .net)
+
    promt 3: que pinta deberia tener un controlador, esta funcion ....
 
 - En un proyecto medio cosinado (legacy), pedirle que extraiga reglas a partir de ese proyecto.
-  prompt.
-  Analiza la Capeta Api y genera reglas de cursor|kilo code... ejecutar.
-  La calidad de Reglas depende del Agente IA.
 
-  prompt: explicame la estructura de este proyecto y extraer reglas.
+  prompt:
+  > Analiza la Capeta Api y genera reglas de cursor|kilo code... ejecutar.
+  > La calidad de Reglas depende del Agente IA.
+
+  prompt:
+  > explicame la estructura de este proyecto y extraer reglas.
 
 
 ---- Chat----
@@ -41,7 +46,7 @@ como lo optengo?
 - que me haga las reglas y despues ir puliendo.
 ***
 
-este proyecto tal como ha quedado puede ser un arquetipo.
+Este proyecto tal como ha quedado puede ser un arquetipo.
 
 
 ... las reglas, el editor podria generarla automaticamente, otros editores les llaman instruccion, otros de otra manera ....
